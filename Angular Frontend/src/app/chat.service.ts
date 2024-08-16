@@ -7,7 +7,7 @@ import { io } from 'socket.io-client';
 })
 export class ChatService {
   public message$: BehaviorSubject<string> = new BehaviorSubject('');
-  public socket = io('http://localhost:3000'); 
+  public socket = io('https://chat-pro-khaki.vercel.app/'); 
 
   constructor() {}
 
